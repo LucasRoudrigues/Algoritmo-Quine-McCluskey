@@ -1,1 +1,1 @@
-# Algoritmo-Quine-McCluskey lucasss viadooo
+# Algoritmo-Quine-McCluskey
