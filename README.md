@@ -1,0 +1,1 @@
+# Algoritmo-Quine-McCluskey
