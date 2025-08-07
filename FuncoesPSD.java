@@ -9,15 +9,15 @@ public class FuncoesPSD {
 		
 		try{
 			File arquivo = new File(nomeArquivo);
-            Scanner leitor = new Scanner(arquivo);
-            while (leitor.hasNextLine()) {
+            Scanner sc = new Scanner(arquivo);
+            while (sc.hasNextLine()) {
 				cont++;
-				leitor.nextLine();
+				sc.nextLine();
 			}
 		} catch (IOException e) {
             System.out.println("Ocorreu um erro ao ler o arquivo: " + e.getMessage());
 		}
-		leitor.close();
+		sc.close();
 		return cont;
 	}
 	
@@ -26,15 +26,15 @@ public class FuncoesPSD {
 		String []linha = new String [numLinha];
 		try {
 			File arquivo = new File(nomeArquivo);
-            Scanner leitor = new Scanner(arquivo);
-            while (leitor.hasNextLine()) {
-                linha[i] = leitor.nextLine();
+            Scanner sc = new Scanner(arquivo);
+            while (sc.hasNextLine()) {
+                linha[i] = sc.nextLine();
                 i++;
 			}     
 		} catch (IOException e) {
             System.out.println("Ocorreu um erro ao ler o arquivo: " + e.getMessage());
 		}
-		leitor.close();
+		sc.close();
 		return linha;
 	}
 	
