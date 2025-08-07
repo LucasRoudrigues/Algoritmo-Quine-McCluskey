@@ -14,10 +14,10 @@ public class FuncoesPSD {
 				cont++;
 				leitor.nextLine();
 			}
-			leitor.close();
-			} catch (IOException e) {
-            	System.out.println("Ocorreu um erro ao ler o arquivo: " + e.getMessage());
-			}
+		} catch (IOException e) {
+            System.out.println("Ocorreu um erro ao ler o arquivo: " + e.getMessage());
+		}
+		leitor.close();
 		return cont;
 	}
 	
@@ -30,11 +30,11 @@ public class FuncoesPSD {
             while (leitor.hasNextLine()) {
                 linha[i] = leitor.nextLine();
                 i++;
-			}
-		leitor.close();     
+			}     
 		} catch (IOException e) {
             System.out.println("Ocorreu um erro ao ler o arquivo: " + e.getMessage());
 		}
+		leitor.close();
 		return linha;
 	}
 	
